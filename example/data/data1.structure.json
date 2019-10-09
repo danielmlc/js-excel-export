@@ -1,0 +1,34 @@
+{
+    "sheetConf":{
+        "title":"测试",
+        "info":false,  
+        "header":{
+            "columns":[
+                {
+                    "name":"id",
+                    "title":"主键",
+                    "width":10,
+                    "type":"Number"
+                },
+                {
+                    "name":"station",
+                    "title":"拌合站",
+                    "width":16,
+                    "type":"String"
+                },
+                {
+                    "name":"vehicle",
+                    "title":"车牌号",
+                    "width":10,
+                    "type":"String"
+                },
+                {
+                    "name":"driver",
+                    "title":"司机",
+                    "width":12,
+                    "type":"String"
+                }
+            ]
+        }
+    }
+}

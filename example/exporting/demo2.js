@@ -2,11 +2,11 @@
  * @Description: 未描述
  * @Author: danielmlc
  * @Date: 2019-10-08 16:59:20
- * @LastEditTime: 2019-10-08 17:24:03
+ * @LastEditTime: 2019-10-09 12:32:21
  */
 const ExcelCls = require('../../lib/xlsx.js')
-
-
+const configJson = require('../data/data1.structure.json')
+const testData = require('../data/data1.json')
 let _excel = new  ExcelCls(
     {
         workbook:{
@@ -14,14 +14,8 @@ let _excel = new  ExcelCls(
         }
     }  
 )
-
 let workbook = _excel.getWorkbook();
-
-
-// 保存表格
-workbook.xlsx.writeFile("../files/demo2.xlsx").then(function() {
-    // done
-    console.log("done");
-});
-  
+let worksheet = _excel.getSheet(workbook,configJson.sheetConf,testData);
+worksheet.commit()
+workbook.commit() 
 console.log('done!')
