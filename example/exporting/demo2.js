@@ -19,6 +19,9 @@ _excel.getWorkbook(null,function(wb){
      _excel.getSheet(wb, sheetConf.title,function(ws){
         _excel.addSimpleTable(ws, sheetConf.header,testData);
      });
+     _excel.getSheet(wb, 'hahahaha',function(ws){
+        _excel.addSimpleTable(ws, sheetConf.header,testData);
+     });
 });
 
 console.log('done!')

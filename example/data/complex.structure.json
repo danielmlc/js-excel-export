@@ -5,22 +5,6 @@
         "header":{
             "columns":[
                 {
-                    "name":"baseInfo",
-                    "title":"基本信息",
-                    "item":[
-                        {
-                            "name":"orgId",
-                            "title":"项目部编码",
-                            "width":12
-                        },
-                        {
-                            "name":"orgName",
-                            "title":"项目部名称",
-                            "width":22
-                        }
-                    ]
-                },
-                {
                     "name":"id",
                     "title":"主键",
                     "width":10
@@ -39,7 +23,40 @@
                     "name":"driver",
                     "title":"司机",
                     "width":12
+                },
+                {
+                    "name":"baseInfo",
+                    "title":"基本信息",
+                    "item":[
+                        {
+                            "name":"orgId",
+                            "title":"项目部编码",
+                            "width":12
+                        },
+                        {
+                            "name":"orgName",
+                            "title":"项目部名称",
+                            "width":22
+                        }
+                    ]
+                },
+                {
+                    "name":"quantity",
+                    "title":"生产信息",
+                    "item":[
+                        {
+                            "name":"carAmnt",
+                            "title":"车方量",
+                            "width":8
+                        },
+                        {
+                            "name":"transMete",
+                            "title":"运单方量",
+                            "width":8
+                        }
+                    ]
                 }
+               
             ]
         }
     }
