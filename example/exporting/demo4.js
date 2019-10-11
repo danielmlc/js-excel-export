@@ -1,3 +1,9 @@
+/*
+ * @Description: 未描述
+ * @Author: danielmlc
+ * @Date: 2019-10-11 08:49:08
+ * @LastEditTime: 2019-10-11 08:49:58
+ */
 const fs = require('fs')
 const Excel = require('exceljs')
 
@@ -105,7 +111,4 @@ sheet.addRow({
 
 sheet.commit()
 workbook.commit() 
-// workbook.xlsx.writeFile("../files/demo4.xlsx").then(function() {
-//     // done
-//     console.log("done");
-//   });
+console.log('done!')

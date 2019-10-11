@@ -20,11 +20,6 @@
                     "width":10
                 },
                 {
-                    "name":"driver",
-                    "title":"司机",
-                    "width":12
-                },
-                {
                     "name":"baseInfo",
                     "title":"基本信息",
                     "item":[
@@ -55,8 +50,12 @@
                             "width":8
                         }
                     ]
+                },
+                {
+                    "name":"driver",
+                    "title":"司机",
+                    "width":12
                 }
-               
             ]
         }
     }
