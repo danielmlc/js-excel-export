@@ -37,25 +37,32 @@
                 },
                 {
                     "name":"quantity",
-                    "title":"生产信息",
+                    "title":"重要信息",
                     "item":[
                         {
-                            "name":"carAmnt",
-                            "title":"车方量",
-                            "width":8
+                            "name":"quantity",
+                            "title":"生产信息",
+                            "item":[
+                                {
+                                    "name":"carAmnt",
+                                    "title":"车方量",
+                                    "width":8
+                                },
+                                {
+                                    "name":"transMete",
+                                    "title":"运单方量",
+                                    "width":8
+                                }
+                            ]
                         },
                         {
-                            "name":"transMete",
-                            "title":"运单方量",
-                            "width":8
+                            "name":"driver",
+                            "title":"司机",
+                            "width":12
                         }
                     ]
-                },
-                {
-                    "name":"driver",
-                    "title":"司机",
-                    "width":12
                 }
+                
             ]
         }
     }
