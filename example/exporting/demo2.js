@@ -2,7 +2,7 @@
  * @Description: 未描述
  * @Author: danielmlc
  * @Date: 2019-10-08 16:59:20
- * @LastEditTime: 2019-10-11 09:51:56
+ * @LastEditTime: 2019-10-15 16:34:49
  */
 const ExcelCls = require('../../lib/xlsx.js')
 const configJson = require('../data/data1.structure.json')
@@ -18,6 +18,7 @@ let _excel = new  ExcelCls(
         }
     }  
 )
+
 _excel.getWorkbook(null,function(wb){
     let sheetConf = configJson.sheetConf;
      _excel.getSheet(wb, sheetConf.title,function(ws){
@@ -25,7 +26,8 @@ _excel.getWorkbook(null,function(wb){
      });
      let sheetConf1 = configJson1.sheetConf;
      _excel.getSheet(wb, '复杂表格写入',function(ws){
-        _excel.addComplexTable(ws, sheetConf1.header,testData1);
+        _excel.addComplexTable(ws, sheetConf.header,testData,4);
+        _excel.addComplexTable(ws, sheetConf1.header,testData1.data,testData.length+4);
      });
 });
 
